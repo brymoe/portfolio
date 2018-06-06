@@ -1,0 +1,257 @@
+/*
+
+Bryan Moore Web Developement
+
+Personal Website for my resume & portfolio
+
+index.html
+
+*/
+
+@font-face {
+	font-family: adamPro;
+	src: url(adamCgPro.otf);
+}
+
+body {
+	background-color: #EAE7DC;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 2px;
+    width: 80%;
+    border-color: #FBEEC1;
+} 
+
+a {
+	cursor: crosshair;
+}
+
+li {
+	text-align: left;
+}
+
+.headline {
+	padding-top: 50px;
+	padding-bottom: 20px;
+	background-color: #1A1A1D;
+}
+
+.banner {
+	font-size: 30pt;
+	text-align: center;
+	font-weight: bold;
+	font-family: adamPro;
+	color: #EAE7DC;
+}
+
+.banner2 {
+	font-size: 14pt;
+	text-align: center;
+	font-weight: bold;
+	font-family: avenir;
+	color: #31708E;
+}
+
+.banner3 {
+	font-size: 12pt;
+	text-align: center;
+	font-weight: bold;
+	font-family: avenir;
+	color: #3F3F3F;
+	padding-top: 10px;
+}
+
+.banner3 a {
+	padding: 30px;
+	color: #B1A296;
+}
+
+.banner3 a:hover {
+	color: #EAE7DC;
+	transition: 1000ms ease;
+
+}
+
+.aboutMe {
+	padding: 50px;
+	font-size: 20pt;
+	font-family: avenir;
+}
+
+.aboutMe p {
+	font-size: 12pt;
+}
+
+.aboutMe button {
+	font-family: avenir;
+	font-size: 12pt;
+	color: #EAE7DC;
+	background-color: #31708E;
+	height: 40px;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+.aboutMe button:hover {
+	color: #31708E;
+	font-style: bold;
+	background-color: #EAE7DC;
+	border: 2px solid #31708E;
+	transition: 1000ms ease;
+
+}
+
+#button2 {
+	font-family: avenir;
+	font-size: 12pt;
+	color: #EAE7DC;
+	background-color: #B1A296;
+}
+
+#button2:hover {
+	color: #B1A296;
+	background-color: #EAE7DC;
+	border: 2px solid #B1A296;
+	transition: 1000ms ease;
+}
+
+#custom {
+	color: #31708E;
+	font-weight: bold;
+}
+
+.service-wrapper {
+	overflow: hidden;
+	position: relative;
+}
+
+.service-wrapper-inner {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 185px;
+	padding: 15px 20px;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	background: rgba(32, 32, 32, 0.9);
+	font-family: adamPro;
+	color: #EAE7DC;
+}
+
+.service-wrapper-inner p {
+	font-size: 15pt;
+	color: #31708E;
+}
+
+.service-wrapper-inner li {
+	color: #B1A296;
+}
+
+.service-wrapper:hover .service-wrapper-inner {
+	top: 0;
+}
+
+.portfolioHeadline {
+	background-color: #1A1A1D; 
+}
+
+.portfolioHeadline h2 {
+	color: #EAE7DC;
+	font-size: 30pt;
+	text-align: center;
+	font-weight: bold;
+	font-family: adamPro;
+	padding-top: 20px;
+}
+
+.portfolioSection {
+	background-color: #1A1A1D; 
+	color: #EAE7DC;
+	text-align: center;
+	font-family: avenir;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+.portfolioSection img {
+	width: 100%;
+}
+
+.resumeHeadline {
+	background-color: #EAE7DC; 
+	padding-top: 20px;
+}
+
+.resumePdf {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.resumeHeadline h2 {
+	color: #1A1A1D;
+	font-size: 30pt;
+	text-align: center;
+	font-weight: bold;
+	font-family: adamPro;
+}
+
+.resumeHeadline hr {
+	width: 100%;
+	border-color: #1A1A1D;
+}
+
+.resumeSection h3 {
+	color: #1A1A1D;
+	font-size: 15pt;
+	text-align: center;
+	font-weight: bold;
+	font-family: adamPro;
+}
+
+.resumeSection h4 {
+	color: #1A1A1D;
+	font-size: 15pt;
+	font-weight: bold;
+	font-family: avenir;
+}
+
+.resumeSection h5 {
+	color: #1A1A1D;
+	font-size: 15pt;
+	font-family: avenir;
+}
+
+.resumeSection {
+	color: #1A1A1D;
+	font-size: 14pt;
+	font-family: avenir;
+}
+
+.contactSection {
+	background-color: #1A1A1D; 
+	color: #EAE7DC;
+	text-align: center;
+	font-family: avenir;
+	padding-top: 20px;
+}
+
+.contactSection h2 {
+	color: #EAE7DC;
+	font-size: 30pt;
+	text-align: center;
+	font-weight: bold;
+	font-family: adamPro;
+	padding-top: 20px;
+}
+
