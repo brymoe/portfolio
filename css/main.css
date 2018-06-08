@@ -36,6 +36,18 @@ li {
 	text-align: left;
 }
 
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
 .headline {
 	padding-top: 50px;
 	padding-bottom: 20px;
@@ -56,8 +68,47 @@ li {
     image-rendering: -webkit-optimize-contrast;
 }
 
+#navbar {
+	z-index: 10000;
+    position: fixed; /* Make it stick/fixed */
+    top: -50px; /* Hide the navbar 50 px outside of the top view */
+    width: 100%; /* Full width */
+    transition: top 0.4s; /* Transition effect when sliding down (and up) */
+    /* The image used */
+
+    background-image: url("sand.jpg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    image-rendering: -webkit-optimize-contrast;
+
+    font-size: 12pt;
+	text-align: center;
+	font-weight: bold;
+	font-family: avenir;
+	color: #3F3F3F;
+	padding: 20px;
+}
+
+
+/* Style the navbar links */
+#navbar a {
+    padding: 30px;
+    color: #B1A296;
+    text-align: center;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    color: #EAE7DC;
+	transition: 1000ms ease;
+}
+
 .banner {
-	font-size: 30pt;
+	font-size: 40pt;
 	text-align: center;
 	font-weight: bold;
 	font-family: adamPro;
@@ -66,7 +117,7 @@ li {
 }
 
 .banner2 {
-	font-size: 14pt;
+	font-size: 25pt;
 	text-align: center;
 	font-weight: bold;
 	font-family: avenir;

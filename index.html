@@ -31,13 +31,23 @@ index.html
 </head>
 
 <body>
+
+<div id="navbar">
+  <a href="index.html">ABOUT ME</a>
+  <a href=#portfolio>PORTFOLIO</a>
+  <a href=#resume>RESUME</a>
+  <a href=#contact>CONTACT</a>
+</div>
+
 <div class="headline">
   <div class="banner">
     <p>BRYAN MOORE</p>
   </div>
+  <br>
   <div class="banner2">
     <p>&middot; CUSTOM WEB DEVELOPMENT &middot;</p>
   </div>
+  <br>
   <hr>
   <div class="banner3">
     <a href="index.html">ABOUT ME</a>
@@ -275,7 +285,22 @@ index.html
 	</div>
 </div>
 
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+// When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+</script>
+
 <!-- Scroll Reveal -->
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
 </body>
 </html>
