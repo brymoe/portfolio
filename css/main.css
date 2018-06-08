@@ -71,19 +71,19 @@ li {
 #navbar {
 	z-index: 10000;
     position: fixed; /* Make it stick/fixed */
-    top: -50px; /* Hide the navbar 50 px outside of the top view */
+    top: -100px; /* Hide the navbar 50 px outside of the top view */
     width: 100%; /* Full width */
-    transition: top 0.4s; /* Transition effect when sliding down (and up) */
-    /* The image used */
+    /* transition: top 0.4s;  Transition effect when sliding down (and up) */
 
+    /* The image used */
     background-image: url("sand.jpg");
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
     image-rendering: -webkit-optimize-contrast;
+    
+    background-color: white;
 
     font-size: 12pt;
 	text-align: center;
@@ -99,7 +99,6 @@ li {
     padding: 30px;
     color: #B1A296;
     text-align: center;
-    text-decoration: none;
 }
 
 #navbar a:hover {
