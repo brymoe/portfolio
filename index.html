@@ -22,6 +22,8 @@ index.html
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Bootstrap -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Social Media Icons -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <!-- load and instantiate ScrollReveal first -->
     <script src="js/scrollreveal.min.js"></script>
@@ -36,7 +38,7 @@ index.html
   <a href="index.html">ABOUT ME</a>
   <a href=#portfolio>PORTFOLIO</a>
   <a href=#resume>RESUME</a>
-  <a href=#contact>CONTACT</a>
+  <a href=#contact>CONNECT</a>
 </div>
 
 <div class="headline">
@@ -45,15 +47,16 @@ index.html
   </div>
   <br>
   <div class="banner2">
+  	<div class="rythm-bass"></div>
     <p>&middot; CUSTOM WEB DEVELOPMENT &middot;</p>
   </div>
   <br>
   <hr>
   <div class="banner3">
     <a href="index.html">ABOUT ME</a>
-    <a href=#portfolio>PORTFOLIO</a>
-    <a href=#resume>RESUME</a>
-    <a href=#contact>CONTACT</a>
+  	<a href=#portfolio>PORTFOLIO</a>
+  	<a href=#resume>RESUME</a>
+  	<a href=#contact>CONNECT</a>
   </div>
 </div>
 
@@ -65,12 +68,13 @@ index.html
     	<div class = "aboutMe">
     		<h2>Hello, world.</h2>
     		<p>
-    			My name's Bryan.<br>
-    			I'm a software developer, that enjoys making <span id="custom">custom</span> websites. <br>
+    			My name is Bryan Moore.<br>
+    			I am a software developer, that enjoys making <span id="custom">custom</span> websites. <br>
     			This includes front end development and design, as well as back end development. <br>
     			Taking on challenges of any size is what I enjoy, so do not hesitate to contact me with a project idea. <br>
     		</p>
     		<br>
+
     		<button>Need A Website ></button>
     		<button id="button2">Looking To Hire ></button>
     	</div>
@@ -274,15 +278,43 @@ index.html
 	    <!-- Left Side -->
 	    <div class="col-xs-2"></div>
 	    <div class="col-xs-8">
+	    	<h2>CONNECT</h2>
 	    	<a name="contact"></a>
-	    	<h2>CONTACT</h2>
 	    	<hr>
 	    	<br>
-
-
-	    </div>
+			<form method="POST" action="https://formspree.io/bryanallenmoe@gmail.com">
+				<input type="email" name="email" placeholder="Your Email Address">
+				<br>
+				<br>
+				<textarea name="message" placeholder="Your Message" ></textarea>
+				<button type="submit" class="btn btn-lg btn-default button-glow">Send</button>
+			</form>
+			<br>
+	    	</div>
 	    <div class="col-xs-2"></div>
-	  </div>
+	</div>
+	<div class="row">
+	    <!-- Left Side -->
+	    <div class="col-xs-2"></div>
+	    <div class="col-xs-8">
+	    	<br>
+	    	<br>
+	    	<br>
+	    	<br>
+	    	<br>
+	    	<br>
+	    	
+			<div class="wrapper">
+			  <ul>
+			    <a href="https://www.linkedin.com/in/bryanallenmoore/"><li class="linkedin"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></li></a>
+			    <a href="https://github.com/brymoe"><li class="github"><i class="fa fa-github fa-2x" aria-hidden="true"></i></li></a>
+			    <a href="https://www.facebook.com/profile.php?id=644708834"><li class="facebook"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li></a>
+			    <li class="google"><i class="fa fa-google fa-2x" aria-hidden="true"></i></li>
+			    <li class="whatsapp"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></li>
+			  </ul>
+			</div>
+	    	</div>
+	    <div class="col-xs-2"></div>
 	</div>
 </div>
 
@@ -298,10 +330,14 @@ function scrollFunction() {
     document.getElementById("navbar").style.top = "-200px";
   }
 }
+
+//
 </script>
 
 <!-- Scroll Reveal -->
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+<script type="text/javascript" src="./rythm.js"></script>
 
 </body>
 </html>
